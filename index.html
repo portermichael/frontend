@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Listing Widget</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="vendor/styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/icons.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/modules.css">
+</head>
+<body>
+  <header class="site-header clearfix">
+      <h1>
+        Awesome Listings Widget
+      </h1>
+      <ul>
+        <li class="sortPrice active">Price</li>
+        <li class="sortBeds">Beds</li>
+        <li class="sortSqFt">SqFt</li>
+      </ul>
+  </header>
+  <main>
+    <section id="properties" class="tab-content">
+      <article class="template" data-category="cat">
+          <img src='#' alt="Picture of Property">
+          <div class="stats">
+            <div class="built">Built</div>
+            <address><a href="">Address</a></address>
+            <div class="price">Price</div>
+            <div class="bedsBathsSqft">bedsBathsSqft</div>
+          </div>
+      </article>
+
+    </section>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="data/batmanRealty.js"></script>
+  <script src="data/supermanRealty.js"></script>
+  <script src="scripts/properties.js"></script>
+</body>
+</html>

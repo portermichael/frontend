@@ -1,0 +1,116 @@
+.site-header {
+  background: #fff;
+  padding: .1em;
+}
+.sortPrice, .sortSqFt, .sortBeds {
+  display: inline;
+  float: left;
+  border-radius: 0.75em;
+  background: green;
+  text-align: center;
+  color: white;
+  padding: 0.5em 4em;
+  margin: auto 0.5em;
+}
+
+.active {
+  background: blue;
+}
+article {
+  display: inline;
+  float: left;
+  border: solid grey 1px;
+  width: calc(50% - 2em);
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  padding: 0.5em;
+}
+
+article img {
+  float: left;
+  display: block;
+  width: 100%;
+  background: grey;
+}
+
+.content {
+  width: 75%;
+}
+
+article a {
+
+}
+
+a:hover {
+  color: blue;
+}
+
+
+
+address {
+  display: block;
+  float: left;
+  font-size: 100%;
+  width: calc(100% - 1em);
+  margin: auto 0.5em;
+}
+
+.price {
+  display: block;
+  float: left;
+  font-size: 125%;
+  width: calc(100% - 1em);
+  margin: auto 0.5em;
+}
+
+.built {
+  display: block;
+  float: right;
+  color: grey;
+  font-size: 75%;
+  padding-left: 30%;
+}
+
+.bedsBathsSqft {
+  display: inline;
+  float: left;
+  width: calc(100% - 1em);
+  margin: auto 0.5em;
+  font-weight: bold;
+}
+
+@media only screen and (min-device-width : 480px) {
+  article img {
+    width: 33%;
+  }
+  address {
+    width: calc(67% - 1em);
+    font-size: 100%;
+  }
+  .price {
+    width: calc(67% - 1em);
+  }
+  .bedsBathsSqft {
+    width: calc(67% - 1em);
+  }
+}
+
+@media only screen and (min-device-width : 900px) {
+  article img {
+    width: 25%;
+  }
+  address {
+    width: calc(75% - 1em);
+    font-size: 125%;
+  }
+  .price {
+    width: calc(75% - 1em);
+  }
+  .bedsBathsSqft {
+    width: calc(75% - 1em);
+  }
+}
+
+.template {
+  display: none;
+}
